@@ -1,0 +1,70 @@
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+// VARIABLES
+
+// Font settings
+$font: 'Poppins', sans-serif;
+$font-sizes: (
+    "small": 1.5rem,
+    "medium": 1.7rem,
+    "large": 2.2rem
+);
+
+// Colors
+$btn-cyan: hsl(180, 66%, 49%);
+$text-gray: hsl(0, 0%, 75%);
+$text-dark-gray: hsl(257, 7%, 63%);
+$violet: hsl(257, 27%, 26%);
+$error: hsl(0, 87%, 67%);
+
+
+// UTILITY CLASSES
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    background-color: $btn-cyan;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 200ms ease;
+}
+
+.btn.copied {
+    background-color: $violet;
+}
+
+.btn:hover {
+    background-color: lighten($btn-cyan, 23%);
+}
+
+.btn.copied:hover {
+    background-color: lighten($violet, 23%);
+}
+
+.btn-rounded {
+    padding: 1.3rem 3rem;
+    border-radius: 3rem;
+}
+
+
+// REMOVE TEXT AREA OFF THE SCREEN
+textarea {
+    position: absolute;
+    top: -999rem;
+}
