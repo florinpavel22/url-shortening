@@ -56,6 +56,7 @@ ul {
 
         li {
             margin-left: 2rem;
+            cursor: pointer;
         }
 
         .btn {
@@ -112,7 +113,9 @@ ul {
     }
 
     .mobile-menu.open {
-        display: flex;
+        @media(max-width: 768px) {
+            display: flex;
+        }
     }
 }
 
@@ -157,7 +160,7 @@ ul {
     position: relative;
     top: -9rem;
     background-color: $violet;
-    background-image: url('../../img/bg-shorten-desktop.svg');
+    background-image: url('../../dist/img/bg-shorten-desktop.svg');
     background-size: cover;
 
     form {
@@ -308,7 +311,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../../img/bg-boost-desktop.svg');
+    background-image: url('../../dist/img/bg-boost-desktop.svg');
     background-size: cover;
     background-color: $violet;
 

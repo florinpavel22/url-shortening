@@ -112,6 +112,7 @@ ul {
 
 .navbar .desktop-menu li {
   margin-left: 2rem;
+  cursor: pointer;
 }
 
 .navbar .desktop-menu .btn {
@@ -175,10 +176,12 @@ ul {
   padding: 3rem 0;
 }
 
-.navbar .mobile-menu.open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (max-width: 768px) {
+  .navbar .mobile-menu.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .brief-section {
@@ -220,7 +223,7 @@ ul {
   position: relative;
   top: -9rem;
   background-color: #3b3054;
-  background-image: url("../../img/bg-shorten-desktop.svg");
+  background-image: url("../../dist/img/bg-shorten-desktop.svg");
   background-size: cover;
 }
 
@@ -414,7 +417,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../img/bg-boost-desktop.svg");
+  background-image: url("../../dist/img/bg-boost-desktop.svg");
   background-size: cover;
   background-color: #3b3054;
 }
